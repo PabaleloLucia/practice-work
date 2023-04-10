@@ -20,7 +20,7 @@ function currentDate(now) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 function showWeatherCondition(response) {
@@ -29,9 +29,14 @@ function showWeatherCondition(response) {
     response.data.main.temp
   );
 
+  //document.querySelector("#humidity").innerHTML = Math.round(
+  //response.data.humidity.speed
+  //);
+
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
