@@ -51,6 +51,13 @@ a:hover {
   margin-top: 30px;
 }
 
+.weather-temperature img {
+  margin-right: 5px;
+
+  height: 40px;
+  width: 40px;
+}
+
 .precipitation {
   opacity: 50%;
 }
@@ -63,7 +70,11 @@ a:hover {
 .fahrenheitt {
   color: blue;
 }
-
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
 .wrapper {
   max-width: 550px;
   max-height: 500px;

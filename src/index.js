@@ -20,7 +20,7 @@ function currentDate(now) {
     minutes = `0${minutes}`;
   }
 
-  return `${day}, ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function showWeatherCondition(response) {
